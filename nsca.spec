@@ -1,6 +1,6 @@
 Summary:	NSCA daemon for Nagios
 Name:		nsca
-Version:	2.7.1
+Version:	2.7.2
 Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
