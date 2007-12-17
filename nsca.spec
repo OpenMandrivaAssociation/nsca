@@ -15,7 +15,6 @@ Requires:	tcp_wrappers
 Requires:	nagios
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The NSCA addon is designed to accept passive host and service check results
