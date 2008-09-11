@@ -1,7 +1,7 @@
 Summary:	NSCA daemon for Nagios
 Name:		nsca
 Version:	2.7.2
-Release:	%mkrel 4
+Release:	%mkrel 5
 License:	GPL
 Group:		System/Servers
 URL:		http://sourceforge.net/projects/nagios/
@@ -25,7 +25,6 @@ pass them along to the Nagios process by using the external command interface.
 %package -n	send_nsca
 Summary:	NSCA client
 Group:		System/Servers
-Requires:	nagios
 
 %description -n	send_nsca
 NSCA client - is used to send service check information from a remote machine
