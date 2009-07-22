@@ -75,14 +75,14 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc Changelog LEGAL README SECURITY
-%attr(0644,root,root) %config(noreplace) %{_sysconfdir}/nagios/nsca.cfg
-%attr(0755,root,root) %{_initrddir}/nsca
-%attr(0755,root,root) %{_sbindir}/nsca
-%attr(0755,nagios,nagios) /var/spool/nagios
-%attr(0755,nagios,nagios) %dir /var/run/%{name}
+%config(noreplace) %{_sysconfdir}/nagios/nsca.cfg
+%{_initrddir}/nsca
+%{_sbindir}/nsca
+%attr(-,nagios,nagios) /var/spool/nagios
+%attr(-,nagios,nagios) %dir /var/run/%{name}
 
 %files -n send_nsca
 %defattr(-,root,root)
 %doc Changelog LEGAL README SECURITY
-%attr(0644,root,root) %config(noreplace) %{_sysconfdir}/nagios/send_nsca.cfg
-%attr(0755,root,root) %{_sbindir}/send_nsca
+%config(noreplace) %{_sysconfdir}/nagios/send_nsca.cfg
+%{_sbindir}/send_nsca
