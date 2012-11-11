@@ -1,0 +1,38 @@
+--- sample-config/nsca.cfg.in	2006-04-06 23:19:30.000000000 +0200
++++ sample-config/nsca.cfg.in.oden	2007-04-12 14:33:51.000000000 +0200
+@@ -11,7 +11,7 @@
+ # number.  The file is only written if the NSCA daemon is started by the root
+ # user as a single- or multi-process daemon.
+ 
+-pid_file=/var/run/nsca.pid
++pid_file=/var/run/nsca/nsca.pid
+ 
+ 
+ 
+@@ -61,7 +61,7 @@
+ # NOTE: if you specify this option, the command file will be opened
+ #       relative to this directory.
+ 
+-#nsca_chroot=/var/run/nagios/rw
++#nsca_chroot=@localstatedir@
+ 
+ 
+ 
+@@ -78,7 +78,7 @@
+ # This is the location of the Nagios command file that the daemon
+ # should write all service check results that it receives.
+ 
+-command_file=@localstatedir@/rw/nagios.cmd
++command_file=@localstatedir@/nagios.cmd
+ 
+ 
+ # ALTERNATE DUMP FILE
+@@ -91,7 +91,7 @@
+ # it starts Nagios.  Or you may simply choose to ignore any
+ # check results received while Nagios was not running...
+ 
+-alternate_dump_file=@localstatedir@/rw/nsca.dump
++alternate_dump_file=@localstatedir@/nsca.dump
+ 
+ 
+ 
