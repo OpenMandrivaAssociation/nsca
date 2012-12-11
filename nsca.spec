@@ -1,7 +1,7 @@
 Summary:	NSCA daemon for Nagios
 Name:		nsca
 Version:	2.7.2
-Release:	%mkrel 7
+Release:	%mkrel 6
 License:	GPL
 Group:		System/Servers
 URL:		http://sourceforge.net/projects/nagios/
@@ -86,3 +86,47 @@ rm -rf %{buildroot}
 %doc Changelog LEGAL README SECURITY
 %config(noreplace) %{_sysconfdir}/nagios/send_nsca.cfg
 %{_sbindir}/send_nsca
+
+
+%changelog
+* Fri Sep 04 2009 Thierry Vignaud <tvignaud@mandriva.com> 2.7.2-6mdv2010.0
++ Revision: 430184
+- rebuild
+
+  + Guillaume Rousse <guillomovitch@mandriva.org>
+    - %files section cleanup
+
+* Thu Sep 11 2008 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.2-5mdv2009.0
++ Revision: 283883
+- client package doesn't require nagios
+
+* Fri Aug 08 2008 Thierry Vignaud <tvignaud@mandriva.com> 2.7.2-4mdv2009.0
++ Revision: 268291
+- rebuild early 2009.0 package (before pixel changes)
+
+* Thu May 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.2-3mdv2009.0
++ Revision: 207545
+- LSB headers in initscript
+
+* Mon Feb 11 2008 Oden Eriksson <oeriksson@mandriva.com> 2.7.2-2mdv2008.1
++ Revision: 165298
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Fri Jul 13 2007 Oden Eriksson <oeriksson@mandriva.com> 2.7.2-1mdv2008.0
++ Revision: 51850
+- 2.7.2
+
+* Tue Apr 17 2007 Oden Eriksson <oeriksson@mandriva.com> 2.7.1-1mdv2008.0
++ Revision: 13785
+- Import nsca
+
+
+
+* Wed Apr 11 2007 Oden Eriksson <oeriksson@mandriva.com> 2.7.1-1mdv2007.1
+- initial mandriva package
