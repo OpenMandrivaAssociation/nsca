@@ -4,7 +4,7 @@ Version:	2.9.2
 Release:	1
 License:	GPL
 Group:		System/Servers
-URL:		http://sourceforge.net/projects/nagios/
+URL:		https://sourceforge.net/projects/nagios/
 Source0:	http://prdownloads.sourceforge.net/nagios/%{name}-%{version}.tar.gz
 Source1:	nsca.init
 Patch0:		nsca-mdv_conf.diff
