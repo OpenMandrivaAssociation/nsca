@@ -8,6 +8,11 @@ URL:		https://sourceforge.net/projects/nagios/
 Source0:	http://prdownloads.sourceforge.net/nagios/%{name}-%{version}.tar.gz
 Source1:	nsca.init
 Patch0:		nsca-mdv_conf.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	tcp_wrappers-devel
 BuildRequires:	libmcrypt-devel
 BuildRequires:	libtool-devel
